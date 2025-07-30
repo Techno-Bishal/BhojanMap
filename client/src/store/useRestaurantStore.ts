@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
-const API_END_POINT = "https://mithoghar.onrender.com/api/v1/restaurant";
+const API_END_POINT = "http://localhost:3000/api/v1/restaurant";
 axios.defaults.withCredentials = true;
 
 
@@ -116,7 +116,7 @@ export const useRestaurantStore = create<RestaurantState>()(persist((set, get) =
         try {
             const response = await axios.get(`${API_END_POINT}/${restaurantId}`);
             if (response.data.success) {
-                set({ singleRestaurant: response.data.restaurant })
+                set({ singleRestaurant: response.data.restaurant,   restaurant: response.data.restaurant })
             }
         } catch (error) { }
     },

@@ -15,6 +15,7 @@ import { useCartStore } from "@/store/useCartStore";
 import { useRestaurantStore } from "@/store/useRestaurantStore";
 import { useOrderStore } from "@/store/useOrderStore";
 import { Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 const CheckoutConfirmPage = ({
   open,
@@ -42,6 +43,11 @@ const CheckoutConfirmPage = ({
   const checkoutHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // api implementation start from here
+     if (!restaurant?._id) {
+    toast.error("Please select a restaurant first");
+    return;
+  }
+
     try {
       const checkoutData: CheckoutSessionRequest = {
         cartItems: cart.map((cartItem) => ({
