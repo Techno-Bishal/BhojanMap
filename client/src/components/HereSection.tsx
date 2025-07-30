@@ -16,7 +16,7 @@ const HereSection = () => {
       <div className="flex flex-col gap-10 md:w-[40%]">
         <div className="flex flex-col gap-5">
           <h1 className="font-extrabold text-4xl md:text-5xl leading-tight text-gray-900 dark:text-white">
-            Mithoghar — Taste the Tradition 🍛
+            BhojanMap — Taste the Tradition 🍛
           </h1>
           <p className="text-gray-600 dark:text-gray-300 text-lg max-w-md">
             Enjoy authentic Nepali dishes and Other dishes made with love. From momo to thakali,
