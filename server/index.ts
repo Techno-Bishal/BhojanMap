@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin: "https://mithoghar.onrender.com",
+    origin: "https://bhojanmap.onrender.com",
     credentials: true
 }
 app.use(cors(corsOptions));

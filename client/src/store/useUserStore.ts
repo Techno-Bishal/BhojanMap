@@ -5,7 +5,7 @@ import { LoginInputState, SignupInputState } from "@/schema/userSchema";
 import { toast } from "sonner";
 import { useCartStore } from "./useCartStore";  // make sure path is correct
 
-const API_END_POINT = "https://mithoghar.onrender.com/api/v1/user";
+const API_END_POINT = "https://bhojanmap.onrender.com/api/v1/user";
 axios.defaults.withCredentials = true;
 
 type User = {
