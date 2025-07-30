@@ -50,7 +50,7 @@ const Navbar = () => {
     <div className="max-w-7xl mx-auto">
       <div className="flex items-center justify-between h-14">
         <Link to="/">
-          <h1 className="font-extrabold text-2xl text-green-600 dark:text-green-400">MithoGhar!</h1>
+          <h1 className="font-extrabold text-2xl text-green-600 dark:text-green-400">BhojanMap!</h1>
         </Link>
         <div className="hidden md:flex items-center gap-10">
           <div className="hidden md:flex items-center gap-6 text-green-700 dark:text-green-300 font-medium">
@@ -141,7 +141,7 @@ const MobileNavbar = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetHeader className="flex flex-row items-center justify-between mt-2">
-          <SheetTitle className="text-green-600 dark:text-green-400">MithoGhar</SheetTitle>
+          <SheetTitle className="text-green-600 dark:text-green-400">BhojanMap</SheetTitle>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon" className="border-green-400">

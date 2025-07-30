@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Brand */}
         <div className="text-xl font-bold text-lime-400">
-          MithoGhar
+          BhojanMap
         </div>
 
         {/* Navigation Links */}
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <p className="text-center text-sm text-gray-500 mt-8">
-        &copy; 2025 MithoGhar. All rights reserved.
+        &copy; 2025 BhojanMap. All rights reserved.
       </p>
     </footer>
   );
