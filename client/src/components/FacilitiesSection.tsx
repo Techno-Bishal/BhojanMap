@@ -32,7 +32,7 @@ const FacilitiesSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-40">
       <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-12">
-        Why Choose <span className="text-lime-600 dark:text-lime-400">MithoGhar?</span>
+        Why Choose <span className="text-lime-600 dark:text-lime-400">BhojanMap?</span>
       </h2>
       <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3">
         {facilities.map(({ icon, title, description }, idx) => (

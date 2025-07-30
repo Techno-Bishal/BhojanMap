@@ -21,8 +21,8 @@ export const sendWelcomeEmail = async (email: string, name: string) => {
     try {
         await sendMail({
             to: email,
-            subject: "Welcome to Mithoghar",
-            text: `Hi ${name}, welcome to Mithoghar!`,
+            subject: "Welcome to BhojanMap",
+            text: `Hi ${name}, welcome to BhojanMap!`,
             html: html,
         });
     } catch (error) {

@@ -29,7 +29,7 @@ const HereSection = () => {
             type="search"
             aria-label="Search Mithoghar dishes or locations"
             value={searchText}
-            placeholder="Search dish or city (e.g. momo, Pokhara)"
+            placeholder="Search dish or city (e.g. momo, Kathmandu)"
             onChange={(e) => setSearchText(e.target.value)}
             className="pl-10 pr-10 shadow-md focus:ring-2 focus:ring-lime-400 transition"
           />
