@@ -46,7 +46,7 @@ const HereSection = () => {
 
       <div className="w-full md:w-[50%]">
         <img
-          src="https://images.unsplash.com/photo-1606788075761-9c648ccebd1a?auto=format&fit=crop&w=800&q=80"
+          src="https://plus.unsplash.com/premium_photo-1723120354689-82ac201cc9aa?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Traditional Nepali food at Mithoghar"
           className="object-cover w-full max-h-[500px] rounded-lg shadow-lg"
           loading="lazy"
