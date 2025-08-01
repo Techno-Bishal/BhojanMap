@@ -1,12 +1,16 @@
-// server/utils/uploadImage.ts मा
-import { v2 as cloudinary } from 'cloudinary';
+import { v2 as cloudinary } from "cloudinary";
+import streamifier from "streamifier";
 
- const uploadImageOnCloudinary = async (file: Express.Multer.File) => {
-  const result = await cloudinary.uploader.upload(
-    `data:${file.mimetype};base64,${file.buffer.toString('base64')}`,
-    { folder: 'restaurant-app' }
-  );
-  return result.secure_url;
+const uploadImageOnCloudinary = (file: Express.Multer.File) => {
+  return new Promise((resolve, reject) => {
+    const uploadStream = cloudinary.uploader.upload_stream(
+      { folder: "restaurant-app" },
+      (error, result) => {
+        if (error) reject(error);
+        else resolve(result?.secure_url);
+      }
+    );
+
+    streamifier.createReadStream(file.buffer).pipe(uploadStream);
+  });
 };
-
-export default uploadImageOnCloudinary
